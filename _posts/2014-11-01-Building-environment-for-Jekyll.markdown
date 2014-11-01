@@ -18,23 +18,23 @@ At the end of creation, GUI didn't appear.
 
 <img src="{{ "/images/posts/2014-11-01.png" | prepend: site.baseurl }}">
 
-Follow steps : 
+Follow steps[^nolexer] : 
 
 * Restore the /etc/issue file
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo mv /etc/issue.backup /etc/issue
 {% endhighlight %}
 
 * Restore the /etc/rc.local file：
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo mv /etc/rc.local.backup /etc/rc.local
 {% endhighlight %}
 
 * Restore the /etc/init/gdm.conf file：
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo mv /opt/vmware-tools-installer/gdm.conf /etc/init
 {% endhighlight %}
 
@@ -42,20 +42,20 @@ sudo mv /opt/vmware-tools-installer/gdm.conf /etc/init
 
 Then login and change repositories
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo apt-get install gksu
 gksu software-properties-gtk
 {% endhighlight %}
 
 then
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo apt-get update
 sudo apt-get upgrade
 {% endhighlight %}
 
 Install google-chrome
-{% highlight ruby %}
+{% highlight bash %}
 #32bit
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
 sudo dpkg -i google-chrome-stable_current_i386.deb
@@ -76,7 +76,7 @@ Some libraires have been out of date or got higher version during installation.T
 
 After installation,run
 
-{% highlight ruby %}
+{% highlight bash %}
 ruby -verion
 {% endhighlight %}
 
@@ -86,19 +86,19 @@ to test if ruby installed successfully.
 
 1.Install bundler
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo gem install bundler
 {% endhighlight %}
 
 2.Select a directory and clone the repository
 
-{% highlight ruby %}
+{% highlight bash %}
 git clone https://github.com/username/username.github.io
 {% endhighlight %}
 
 3.Change directory to username.github.io and create Gemfile
 
-{% highlight ruby %}
+{% highlight bash %}
 cd username.github.io
 touch Gemfile
 vi Gemfile
@@ -111,19 +111,19 @@ Add following content to Gemfile
 
 4.Run 
 
-{% highlight ruby %}
+{% highlight bash %}
 bundle install
 {% endhighlight %}
 
 5.In the root of repository
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo bundle exec jekyll serve
 {% endhighlight %}
 
 6.Encounter an error:Could not find Javascript runtime[^nodejs].Run:
 
-{% highlight ruby %}
+{% highlight bash %}
 sudo apt-get install nodejs
 {% endhighlight %}
 
@@ -131,6 +131,7 @@ Now,site can be accessed at
 
     http://localhost:4000
 
+[^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183">Build fails and fails #1183</a>
 
 [^installruby]:<a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html">Paul's Software Blog</a>
 
