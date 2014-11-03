@@ -20,6 +20,8 @@ First,create a table with round corner outside.
         table {
           width: 50%;
           border: 3px solid #ddd;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
           border-radius: 14px;
         }
     </style>
@@ -82,6 +84,8 @@ Third use *border-spacing* to clear the spaces between borders inside the table.
 table {
   width: 50%;
   border: 3px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 14px;
   border-spacing: 0;    /*new added*/
 }
@@ -130,6 +134,8 @@ Total *\<style\>* section would be:
 table {
   width: 50%;
   border: 3px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 14px;
   border-spacing: 0;
 }

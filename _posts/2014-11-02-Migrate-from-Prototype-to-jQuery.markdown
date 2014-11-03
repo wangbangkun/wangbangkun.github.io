@@ -8,14 +8,16 @@ categories: jQuery
 
 ---
 
-### One Prototype object only uses native method
+#### One Prototype object only uses native method
+
+change
 
 {% highlight javascript %}
 var ele = $("some_id");
 ele.innerHTML = "some-value";
 {% endhighlight %}
 
-change to native javascript
+to native javascript
 
 {% highlight javascript %}
 var ele = document.getElementById("some_id");
@@ -25,7 +27,7 @@ ele.innerHTML = "some-value";
 
 ---
 
-### Checking null
+#### Checking null
 
 |Prototype|jQuery|
 |---------|------|
@@ -34,14 +36,14 @@ ele.innerHTML = "some-value";
 
 ---
 
-### Creating new element
-    Prototype
+#### Creating new element
+Prototype
 
 {% highlight javascript %}
 new Element("div")
 {% endhighlight %}
 
-    jQuery
+jQuery
 
 {% highlight javascript %}
 jQuery("<div>")
@@ -50,7 +52,7 @@ jQuery("<div>")
 
 ---
 
-### Traversing > Filtering
+#### Traversing > Filtering
 
 |Prototype|jQuery|
 |---------|------|
@@ -61,7 +63,7 @@ jQuery("<div>")
 
 ---
 
-### Effects
+#### Effects
 
 |Prototype|jQuery|
 |---------|------|
@@ -72,7 +74,7 @@ jQuery("<div>")
 
 ---
 
-### Manipulation
+#### Manipulation
 
 |Prototype|jQuery|
 |---------|------|
@@ -96,7 +98,7 @@ jQuery("<div>")
 
 ---
 
-### Events
+#### Events
 
 |Prototype|jQuery|
 |---------|------|
@@ -109,9 +111,9 @@ jQuery("<div>")
 
 ---
 
-### Ajax > Low-Level Interface
+#### Ajax > Low-Level Interface
 
-    prototype
+prototype
 
 {% highlight javascript %}
     new Ajax.Request(url,{
@@ -129,7 +131,7 @@ jQuery("<div>")
     });
 {% endhighlight %}
 
-    jQuery
+jQuery
 
 {% highlight javascript %}
     jQuery.ajax(url,{
@@ -148,7 +150,7 @@ jQuery("<div>")
 
 ---
 
-### Miscellaneous > Collection Manipulation | Traversing
+#### Miscellaneous > Collection Manipulation | Traversing
 
 |Prototype|jQuery|
 |---------|------|
@@ -157,13 +159,13 @@ jQuery("<div>")
 
 ---
 
-###  Utilities
+#### Utilities
 
 |Prototype|jQuery|
 |---------|------|
 |<code>someText.isJSON()</code>|<code>typeof jQuery.parseJSON(someText) === "object"</code>|
 
-    prototype
+prototype
 
 {% highlight javascript %}
 $$("#enumerable").any(function(e){
@@ -171,7 +173,7 @@ $$("#enumerable").any(function(e){
 });
 {% endhighlight %}
 
-    jQuery
+jQuery
 
 {% highlight javascript %}
 // solution 1.Get the length of array which contains elements those satisfy a filter function
@@ -191,27 +193,27 @@ $("#enumerable").each(function(index,e){
 
 ---
 
-### Methods of Prototype those jQuery doesn't have
+#### Methods of Prototype those jQuery doesn't exist.
 
-    1.prototype
+1.prototype
 
 {% highlight javascript %}
 someStr.escapeHTML();
 {% endhighlight %}
 
-    using native javascript
+using native javascript
 
 {% highlight javascript %}
 someStr.replace("/&/g", "&amp;").replace("/</g", "&lt;").replace("/>/g", "&gt;");
 {% endhighlight %}
 
-    2.prototype
+2.prototype
 
 {% highlight javascript %}
 [1, 7, -2, -4, 5].detect(function(n) { return n < 0; });
 {% endhighlight %}
 
-    navtive javascript
+navtive javascript
 
 {% highlight javascript %}
 var arr = [1, 7, -2, -4, 5];
