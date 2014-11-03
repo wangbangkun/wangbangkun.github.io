@@ -9,21 +9,34 @@ table {
   max-width: 100%;
   background-color: transparent;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-left: 0;
+  border: 2px solid #ddd;
   border-spacing: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
+table tr>th:not(:first-child), table tr>td:not(:first-child) {
+  border-left: 2px solid #ddd;
+}
+
+table tr>td {
+  border-top: 2px solid #ddd;
+}
+
 table th, table td {
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
   padding: 8px;
   vertical-align: top;
 }
 
-table tr:nth-child(2n+1)>th, table tr:nth-child(2n+1)>td {
+table tr:nth-child(2n)>td {
   background-color : rgba(102,128,153,.05);
+}
+
+table tr:last-child>td:first-child {
+  border-radius: 0 0 0 2px;
+}
+
+table tr:last-child>td:last-child {
+  border-radius: 0 0 2px 0;
 }
