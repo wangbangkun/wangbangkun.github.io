@@ -7,6 +7,7 @@ hr {
 table {
   width: 100%;
   max-width: 100%;
+  table-layout: fixed;
   background-color: transparent;
   margin-bottom: 20px;
   border: 2px solid #ddd;
@@ -22,6 +23,8 @@ table tr>th:not(:first-child), table tr>td:not(:first-child) {
 
 table tr>td {
   border-top: 2px solid #ddd;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 table th, table td {
