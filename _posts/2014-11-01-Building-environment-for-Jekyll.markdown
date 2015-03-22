@@ -131,6 +131,27 @@ Now,site can be accessed at
 
     http://localhost:4000
 
+7.Error
+
+Unresolved specs during Gem::Specification.reset:
+       jekyll-watch (~> 1.1)
+WARN: Clearing out unresolved specs.<br/>
+Please report a bug if this causes problems.
+/usr/local/lib/ruby/gems/2.1.0/gems/mercenary-0.3.4/lib/mercenary.rb:20:in \`program': cannot load such file -- mercenary/program (LoadError)<br/>
+    from /usr/local/lib/ruby/gems/2.1.0/gems/jekyll-2.5.3/bin/jekyll:20:in \`<top (required)>'<br/>
+    from /usr/local/bin/jekyll:23:in \`load'<br/>
+    from /usr/local/bin/jekyll:23:in \`\<main\>'
+
+Measure ：
+using *bundle exec jekyll serve* instead of *jekyll serve*
+<a href="https://github.com/jekyll/jekyll/issues/3103">https://github.com/jekyll/jekyll/issues/3103</a>
+<a href="https://github.com/jekyll/jekyll/issues/3084">https://github.com/jekyll/jekyll/issues/3084</a>
+<a href="http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs">http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs</a>
+<a href="http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/
+">http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/</a>
+
+
+
 [^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183">Build fails and fails #1183</a>
 
 [^installruby]:<a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html">Paul's Software Blog</a>
