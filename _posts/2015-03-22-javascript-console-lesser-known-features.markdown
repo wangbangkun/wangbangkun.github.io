@@ -51,3 +51,36 @@ console.log(‘There are now %c%d%c listeners’, ‘font-weight: bold;’, 2, �
 
 %**x** *十六进制值* ：IE
 
+### 分组信息
+
+信息能够被console.group()、console.groupCollapsed()和console.groupEnd()分组。
+
+{% highlight javascript %}
+console.group('First group');
+console.log('a');
+console.log('b');
+console.log('c');
+console.groupEnd();
+console.group('Second group');
+console.log('1');
+console.log('2');
+console.log('3');
+console.group('Embeded subgroup');
+console.log('α');
+console.log('β');
+console.log('γ');
+console.groupEnd(); // For the "Embeded subgroup"
+console.groupEnd(); // For the "Second group"
+{% endhighlight %}
+
+<img src="{{ "/images/posts/2015/03/22-1.png" | prepend: site.baseurl }}">
+
+{% highlight javascript %}
+console.groupCollapsed('Pre-collapsed to save your eyes');
+console.log('Never Gonna %s', 'Give You Up');
+console.log('Never Gonna %s', 'Get you down !');
+console.info('This is a potato');
+console.groupEnd();
+{% endhighlight %}
+
+<img src="{{ "/images/posts/2015/03/22-2.gif" | prepend: site.baseurl }}">
