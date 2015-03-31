@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      mysql
+date:       2015-03-22 22:40:35
+summary:    mysql related
+categories: mysql
+---
+
+---
+
+### 连接至MySQL服务器[^connect]
+{% highlight bash %}
+shell> mysql
+{% endhighlight %}
+
+* 默认主机名称是**localhost**。在Unix上，MySQL程序会使用一个Unix socket文件连接至本地服务器（localhost server）。为保证客户端使用TCP/IP连接至本地服务器，使用**\--host**或者**-h**时，为主机名指定值**127.0.0.1**、IP地址或本地服务器名。或者通过使用**\--protocol=TCP**选项来明确指定连接协议
+{% highlight bash %}
+shell> mysql --host=127.0.0.1
+shell> mysql --protocol=TCP
+{% endhighlight %}
+
+* 默认用户名是**ODBC**（Windows）或者登录名（Unix）
+
+* 不指定**-p**或**\--password**,密码不会被发送
+
+* 对mysql而言，第一个非选项参数将会被作为默认库名。如果没有这个选项，mysql不会选择一个默认库
+
+明确指定主机名、用户名和密码：
+{% highlight bash %}
+shell> mysql --host=localhost --user=myname --password=mypass mydb
+shell> mysql -h localhost -u myname -pmypass mydb
+{% endhighlight %}
+对于密码选项而言，密码值可选：
+
+* 如果使用**-p**或**\--password**选项同时指定密码值，**-p**或**\--password**和其后的密码之间一定*不要有空格*
+* 如果使用**-p**或**\--password**选项但是没有指定密码值，客户端将会提醒你输入密码。当你输入密码时，密码不显示。这比在命令行中提供密码更加安全。系统上的其他用户可以通过执行像**ps auxw**命令看到命令行中的密码
+
+使用**\--port**或**-P**选项指定端口号：
+{% highlight bash %}
+shell> mysql --host=remote.example.com --port=13306
+{% endhighlight %}
+默认端口号3306
+
+### 检查版本号[^version]
+1.使用mysql命令客户端建立连接之后，MySQL服务器版本将会显示。
+
+<img src="{{ "/images/posts/2015/03/29-1.png" | prepend: site.baseurl }}">
+
+2.
+{% highlight bash %}
+mysql> show variables like "%version%";
+{% endhighlight %}
+
+<img src="{{ "/images/posts/2015/03/29-2.png" | prepend: site.baseurl }}">
+
+3.使用**select version();**。这种情况下只显示**version**值。
+{% highlight bash %}
+mysql> select version();
+{% endhighlight %}
+
+<img src="{{ "/images/posts/2015/03/29-3.png" | prepend: site.baseurl }}">
+
+4.使用**status;**
+{% highlight bash %}
+mysql> status;
+{% endhighlight %}
+
+<img src="{{ "/images/posts/2015/03/29-4.png" | prepend: site.baseurl }}">
+
+[^connect]: <a href="https://dev.mysql.com/doc/refman/5.0/en/connecting.html">mysql 5.0 manual connecting</a>
+[^version]: <a href="https://dev.mysql.com/doc/refman/5.0/en/installation-version.html">installation version</a>
