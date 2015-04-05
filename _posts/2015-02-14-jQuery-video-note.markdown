@@ -39,4 +39,4 @@ jQuery.fn.init.prototype = jQuery.fn;
 原理是创建jQuery对象时，返回初始化对象；之后将jQuery的原型赋值给jQuery.fn.init的原型。所谓继承。
 
 
-[^ecma]:<a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf">Ecma-262.pdf</a>
+[^ecma]:<a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf" target="_blank">Ecma-262.pdf</a>

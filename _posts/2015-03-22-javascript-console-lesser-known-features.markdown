@@ -8,7 +8,7 @@ categories: javascript
 
 ---
 
-我们已经使用<a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">console</a>工具很长时间了（谢谢Firebug）；但是大多数人仅仅使用基本的方法，如console.log()或者console.error()。
+我们已经使用<a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console" target="_blank">console</a>工具很长时间了（谢谢Firebug）；但是大多数人仅仅使用基本的方法，如console.log()或者console.error()。
 然而console API十分强大而且它提供了很多有趣的方法。
 要时刻牢记console API不是标准的而且也不会标准化。没有绝对的保证这些方法一定有效；*你一定不要在产品中使用console*。
 

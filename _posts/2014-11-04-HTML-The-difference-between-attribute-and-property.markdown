@@ -8,7 +8,7 @@ categories: html
 
 ---
 
-<p>原文链接：<a href="http://jquery-howto.blogspot.com/2011/06/html-difference-between-attribute-and.html">HTML: The difference between attribute and property</a></p>
+<p>原文链接：<a href="http://jquery-howto.blogspot.com/2011/06/html-difference-between-attribute-and.html" target="_blank">HTML: The difference between attribute and property</a></p>
 
 在这篇短文中我将说明在HTML中attributes和properties的差异。jQuery 1.6引入的*.prop()*函数增加了许多关于两者差异的问题。我希望这篇文章能够帮助你理解它。
 
@@ -39,11 +39,11 @@ categories: html
 
 这里是直观表示：
 
-<image src="{{ "/images/posts/141104/01.png" | prepend: site.baseurl }}">
+<image src="{{ "/images/posts/2014/11/04-1.png" | prepend: site.baseurl }}">
 
 <p>假设用户在输入框中输入他的名字"Joe"。这里是一个元素的属性（<em>attribute</em>）和特性（<em>property</em>）的值。</p>
 
-<image src="{{ "/images/posts/141104/02.png" | prepend: site.baseurl }}">
+<image src="{{ "/images/posts/2014/11/04-2.png" | prepend: site.baseurl }}">
 
 <p>正如你所看到，只有元素的特性（<em>property</em>）值改变了，因为它位于DOM中而且是动态的。但是位于HTML文本中的属性（<em>attribute</em>）值却不会发生变化。</p>
 

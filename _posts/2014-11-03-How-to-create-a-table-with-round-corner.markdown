@@ -49,7 +49,7 @@ First,create a table with round corner outside.
 </html>
 {% endhighlight %}
 
-<img src="{{ "/images/posts/141103/01.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-1.png" | prepend: site.baseurl }}">
 
 Second,add vertical borders to the table by adding border-left to th and td elements those are not first element.
 Add
@@ -76,7 +76,7 @@ to *\<style\>* section.
 
 By now the prototype of the table has been completed.
 
-<img src="{{ "/images/posts/141103/02.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-2.png" | prepend: site.baseurl }}">
 
 Third use *border-spacing* to clear the spaces between borders inside the table.
 
@@ -91,7 +91,7 @@ table {
 }
 {% endhighlight %}
 
-<img src="{{ "/images/posts/141103/03.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-3.png" | prepend: site.baseurl }}">
 
 The table narrows.Add *padding* to th and td cells.
 
@@ -101,7 +101,7 @@ table tr>th, table tr>td {
 }
 {% endhighlight %}
 
-<img src="{{ "/images/posts/141103/04.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-4.png" | prepend: site.baseurl }}">
 
 Add background color to make the table more readable.
 
@@ -111,7 +111,7 @@ table tr:not(:first-child):nth-child(2n) {
 }
 {% endhighlight %}
 
-<img src="{{ "/images/posts/141103/05.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-5.png" | prepend: site.baseurl }}">
 
 Removing the bottom right-angles is necessary.
 
@@ -126,7 +126,7 @@ table tr:last-child>td:last-child {
 }
 {% endhighlight %}
 
-<img src="{{ "/images/posts/141103/06.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/03-6.png" | prepend: site.baseurl }}">
 
 Total *\<style\>* section would be:
 {% highlight css %}
@@ -169,4 +169,4 @@ table tr:last-child>td:last-child {
 {% endhighlight %}
 
 
-[^pseudoclass]:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Pseudo-classes</a>
+[^pseudoclass]:<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudo-classes</a>

@@ -67,5 +67,5 @@ mysql> status;
 
 <img src="{{ "/images/posts/2015/03/29-4.png" | prepend: site.baseurl }}">
 
-[^connect]: <a href="https://dev.mysql.com/doc/refman/5.0/en/connecting.html">mysql 5.0 manual connecting</a>
-[^version]: <a href="https://dev.mysql.com/doc/refman/5.0/en/installation-version.html">installation version</a>
+[^connect]: <a href="https://dev.mysql.com/doc/refman/5.0/en/connecting.html" target="_blank">mysql 5.0 manual connecting</a>
+[^version]: <a href="https://dev.mysql.com/doc/refman/5.0/en/installation-version.html" target="_blank">installation version</a>

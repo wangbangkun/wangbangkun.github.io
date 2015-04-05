@@ -10,13 +10,13 @@ categories: jekyll
 
 >* host : windows 7
 >* virtualization app : VMware Player 6.0.3
->* image : <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released" >ubuntu gnome 14.04</a>
+>* image : <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released" target="_blank">ubuntu gnome 14.04</a>
 
 ### Creating virtual machine
 
 At the end of creation, GUI didn't appear. 
 
-<img src="{{ "/images/posts/2014-11-01.png" | prepend: site.baseurl }}">
+<img src="{{ "/images/posts/2014/11/01-1.png" | prepend: site.baseurl }}">
 
 Follow steps[^nolexer] : 
 
@@ -143,22 +143,21 @@ Please report a bug if this causes problems.
     from /usr/local/bin/jekyll:23:in \`\<main\>'
 
 Measure ：
-using *bundle exec jekyll serve* instead of *jekyll serve*
-<a href="https://github.com/jekyll/jekyll/issues/3103">https://github.com/jekyll/jekyll/issues/3103</a>
-<a href="https://github.com/jekyll/jekyll/issues/3084">https://github.com/jekyll/jekyll/issues/3084</a>
-<a href="http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs">http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs</a>
-<a href="http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/
-">http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/</a>
+using *bundle exec jekyll serve* instead of *jekyll serve* ( 
+<a href="https://github.com/jekyll/jekyll/issues/3103" target="_blank">jekyll issues 3103</a> / 
+<a href="https://github.com/jekyll/jekyll/issues/3084" target="_blank">jekyll issues 3084</a> / 
+<a href="http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs" target="_blank">jekyll gem unresolved specs</a> / 
+<a href="http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/" target="_blank">choose a template for your blog</a> )
 
 
 
-[^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183">Build fails and fails #1183</a>
+[^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183" target="_blank">Build fails and fails #1183</a>
 
-[^installruby]:<a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html">Paul's Software Blog</a>
+[^installruby]:<a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html" target="_blank">Paul's Software Blog</a>
 
-[^sharevpn]:<a href="http://phyllisinit.wordpress.com/2012/04/08/share-vpn-connection-between-your-host-and-guest-os-in-vmware-player/">Phyllis in IT</a>
+[^sharevpn]:<a href="http://phyllisinit.wordpress.com/2012/04/08/share-vpn-connection-between-your-host-and-guest-os-in-vmware-player/" target="_blank">Phyllis in IT</a>
 
-[^pagesongithub]:<a href="https://help.github.com/articles/using-jekyll-with-pages/">Using Jekyll with Pages</a>
+[^pagesongithub]:<a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank">Using Jekyll with Pages</a>
 
-[^nodejs]:<a href="http://stackoverflow.com/questions/6282307/execjs-and-could-not-find-a-javascript-runtime">ExecJS and could not find a JavaScript runtime</a>
+[^nodejs]:<a href="http://stackoverflow.com/questions/6282307/execjs-and-could-not-find-a-javascript-runtime" target="_blank">ExecJS and could not find a JavaScript runtime</a>
 
