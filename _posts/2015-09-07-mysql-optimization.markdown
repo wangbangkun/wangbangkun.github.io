@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      mysql
+title:      mysql optimization
 date:       2015-09-07 18:18:35
 summary:    mysql optimization
 categories: mysql
