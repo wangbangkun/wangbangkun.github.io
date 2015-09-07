@@ -26,7 +26,25 @@ categories: mysql
 成本由低到高，效果由高到低
 
 ### 如何发现有问题的SQL
-* show variables like 'slow_query_log'
-* set global slow_query_log_file='/home/mysql/sql_log/mysql-slow.log'
-* set global log_queries_not_using_indexes=on
-* set global long_query_time=1
+1. show variables like 'slow_query_log'
+2. set global slow_query_log_file='/home/mysql/sql_log/mysql-slow.log'
+* 日志存储位置
+3. set global log_queries_not_using_indexes=on
+* 记录没有使用索引的查询
+4. set global long_query_time=1
+* 记录用时大于1s的查询
+
+### 慢查日志格式
+>* # Time: 150907 21:41:20
+>* # User@Host: root[root] @ localhost [127.0.0.1]  Id:    11
+>* # Query_time: 0.001000  Lock_time: 0.000000 Rows_sent: 200  Rows_examined: 200
+>* SET timestamp=1441633280;
+>* select * from actor;
+1. 查询执行时间
+2. 执行SQL主机信息
+3. SQL执行信息
+4. SQL执行时间
+5. SQL内容
+
+### 慢查日志分析工具
+1. mysqldumpslow
