@@ -9,7 +9,7 @@ categories: jekyll
 ---
 
 >* host : windows 7
->* virtualization app : VMware Player 6.0.3
+>* virtualization app : VMware Player 6.0.7
 >* image : <a href="http://ubuntugnome.org/ubuntu-gnome-14-04-lts-is-released" target="_blank">ubuntu gnome 14.04</a>
 
 ### Creating virtual machine
@@ -70,9 +70,33 @@ sudo apt-get install -f
 
 ### Installing ruby from source code[^installruby] [^sharevpn]
 
-Some libraires have been out of date or got higher version during installation.There're hints on the terminal.
+First we need to install some development tools and libraries that Ruby needs to compile. Run the following commands from your terminal:
 
-> Note, selecting 'libxslt1-dev' instead of 'libxslt-dev'<br>Note, selecting 'libncurses5-dev' instead of 'ncurses-dev'
+{% highlight bash %}
+sudo apt-get install build-essential vim git-core curl
+
+sudo apt-get install bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev
+
+sudo apt-get install libcurl4-openssl-dev libopenssl-ruby apache2-prefork-dev libapr1-dev libaprutil1-dev
+
+sudo apt-get install libx11-dev libffi-dev tcl-dev tk-dev  
+{% endhighlight %}
+The above contents referenced are from Paul's Software Blog[^installruby].Some libraires may have been out of date or got higher version during installation.There're hints on the terminal.
+For me,there're:
+    
+    E: Package 'libopenssl-ruby' has no installation candidate
+    Note, selecting 'apache2-dev' instead of 'apache2-prefork-dev'
+
+so I ignored "libopenssl-ruby" and change "apache2-prefork-dev" to "apache2-dev".
+
+<a href="https://www.ruby-lang.org/en/downloads/" target="_blank">Download</a> the tarball and extract it.Change directory to the folder extracted;compile and install.
+{% highlight bash %}
+tar -xzf ruby-2.2.3.tar.gz
+cd ruby-2.2.3
+./configure
+make
+sudo make install
+{% endhighlight %}
 
 After installation,run
 
@@ -80,7 +104,7 @@ After installation,run
 ruby -verion
 {% endhighlight %}
 
-to test if ruby installed successfully.
+to test whether ruby installed successfully or not.
 
 ### Installing Jekyll[^pagesongithub]
 
@@ -104,9 +128,14 @@ touch Gemfile
 vi Gemfile
 {% endhighlight %}
 
-Add following content to Gemfile
+Add following contents to Gemfile while beyond the Great Wall:
 
     source 'https://rubygems.org'
+    gem 'github-pages'
+
+Or add following contents to Gemfile while inside the wall:
+
+    source 'http://mirrors.aliyun.com/rubygems/'
     gem 'github-pages'
 
 4.Run 
@@ -130,26 +159,6 @@ sudo apt-get install nodejs
 Now,site can be accessed at
 
     http://localhost:4000
-
-7.Error
-
-Unresolved specs during Gem::Specification.reset:
-       jekyll-watch (~> 1.1)
-WARN: Clearing out unresolved specs.<br/>
-Please report a bug if this causes problems.
-/usr/local/lib/ruby/gems/2.1.0/gems/mercenary-0.3.4/lib/mercenary.rb:20:in \`program': cannot load such file -- mercenary/program (LoadError)<br/>
-    from /usr/local/lib/ruby/gems/2.1.0/gems/jekyll-2.5.3/bin/jekyll:20:in \`<top (required)>'<br/>
-    from /usr/local/bin/jekyll:23:in \`load'<br/>
-    from /usr/local/bin/jekyll:23:in \`\<main\>'
-
-Measure ：
-using *bundle exec jekyll serve* instead of *jekyll serve* ( 
-<a href="https://github.com/jekyll/jekyll/issues/3103" target="_blank">jekyll issues 3103</a> / 
-<a href="https://github.com/jekyll/jekyll/issues/3084" target="_blank">jekyll issues 3084</a> / 
-<a href="http://stackoverflow.com/questions/27196896/jekyll-gem-unresolved-specs" target="_blank">jekyll gem unresolved specs</a> / 
-<a href="http://cenalulu.github.io/jekyll/choose-a-template-for-your-blog/" target="_blank">choose a template for your blog</a> )
-
-
 
 [^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183" target="_blank">Build fails and fails #1183</a>
 
