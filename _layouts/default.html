@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 {% include head.html %}
-<body class="{% if site.animated %}animated fade-in-down{% endif %}">
-  <div class="site-wrap">
-    {% include header.html %}
 
-    <div class="post p2 p-responsive wrap" role="main">
-      <div class="measure">
+<body>
+<div class="main">
+
+{% include header.html %}
+
+    <div class="container">
         {{ content }}
-      </div>
     </div>
-  </div>
 
-  {% include footer.html %}
+    <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="Top">
+        <a href="javascript:void(0);">
+            <div class="arrow"></div>
+            <div class="stick"></div>
+        </a>
+    </div>
+</div>
+
+{% include footer.html %}
+
+{% include script.html %}
+
 </body>
 </html>

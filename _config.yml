@@ -1,31 +1,37 @@
-# Site settings
-title:       "My notebook"
-email:       
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
-url:         "http://wangbangkun.github.io"
+permalink: /:year-:month-:day/:title/
 
-# Google analytics
-google_analytics: "UA-55965994-1"
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: [
+   "no_intra_emphasis"
+   ,"fenced_code_blocks"
+   ,"autolink"
+   ,"tables"
+   ,"strikethrough"
+   ,"superscript"
+   ,"with_toc_data"
+   ,"footnotes"
+   ,"highlight"
+   ,"underline"
+   ,"quote"
+   ,"lax_spacing"
+   ,"prettify"
+#   ,"html_toc"
+  ]
 
-# Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
+paginate: 10
+paginate_path: ":num"
+baseurl: ""
 
-# Social icons
-show_social_icons: false
-github_username:
-twitter_username:
-google_plus_id:
-linkedin_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
+title: "hello world"
+email: "wangbangkun@yeah.net"
+description: "$().ready();"
+github_username:  "wangbangkun"
 
-# Build settings
-markdown:     kramdown
-permalink:    pretty
-paginate:     5
-sass:
-  compressed: true
+
+url: "http://wangbangkun.github.io"
+imgrepo: "http://wangbangkun.github.io/static/img"
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+
