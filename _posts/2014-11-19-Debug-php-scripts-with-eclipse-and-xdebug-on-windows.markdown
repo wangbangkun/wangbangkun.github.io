@@ -29,32 +29,32 @@ Third,configure the eclipse.
 
 * Select browser in *General > Web Browser*
 
-<img src="{{ "/images/posts/2014/11/19-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-1.png" | prepend: site.imgrepo }}">
 
 * Select *XDebug* in *PHP > Debug*
 
-<img src="{{ "/images/posts/2014/11/19-2.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-2.png" | prepend: site.imgrepo }}">
 
 * Check *WorkBench Options*  in *PHP > Debug > WorkBench Options*
 
-<img src="{{ "/images/posts/2014/11/19-3.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-3.png" | prepend: site.imgrepo }}">
 
 * Add a php server in *PHP > PHP Servers*
 
-<img src="{{ "/images/posts/2014/11/19-4.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-4.png" | prepend: site.imgrepo }}">
 
 * Click *New*,input *Name* and *URL*
 
-<img src="{{ "/images/posts/2014/11/19-5.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-5.png" | prepend: site.imgrepo }}">
 
 * Click next and configure server path mapping
 
-<img src="{{ "/images/posts/2014/11/19-6.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-6.png" | prepend: site.imgrepo }}">
 
 * *Run > Debug Configrations*
 
-<img src="{{ "/images/posts/2014/11/19-7.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-7.png" | prepend: site.imgrepo }}">
 
 * Click *Debug*
 
-<img src="{{ "/images/posts/2014/11/19-8.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/19-8.png" | prepend: site.imgrepo }}">

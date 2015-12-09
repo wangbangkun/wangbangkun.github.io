@@ -16,7 +16,7 @@ categories: jekyll
 
 At the end of creation, GUI didn't appear. 
 
-<img src="{{ "/images/posts/2014/11/01-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2014/11/01-1.png" | prepend: site.imgrepo }}">
 
 Follow steps[^nolexer] : 
 
@@ -160,13 +160,13 @@ Now,site can be accessed at
 
     http://localhost:4000
 
-[^nolexer]:<a href="https://github.com/jekyll/jekyll/issues/1183" target="_blank">Build fails and fails #1183</a>
+[^nolexer]: <a href="https://github.com/jekyll/jekyll/issues/1183" target="_blank">Build fails and fails #1183</a>
 
-[^installruby]:<a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html" target="_blank">Paul's Software Blog</a>
+[^installruby]: <a href="http://paul-wong-jr.blogspot.jp/2012/04/installing-and-compiling-ruby-from.html" target="_blank">Paul's Software Blog</a>
 
-[^sharevpn]:<a href="http://phyllisinit.wordpress.com/2012/04/08/share-vpn-connection-between-your-host-and-guest-os-in-vmware-player/" target="_blank">Phyllis in IT</a>
+[^sharevpn]: <a href="http://phyllisinit.wordpress.com/2012/04/08/share-vpn-connection-between-your-host-and-guest-os-in-vmware-player/" target="_blank">Phyllis in IT</a>
 
-[^pagesongithub]:<a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank">Using Jekyll with Pages</a>
+[^pagesongithub]: <a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank">Using Jekyll with Pages</a>
 
-[^nodejs]:<a href="http://stackoverflow.com/questions/6282307/execjs-and-could-not-find-a-javascript-runtime" target="_blank">ExecJS and could not find a JavaScript runtime</a>
+[^nodejs]: <a href="http://stackoverflow.com/questions/6282307/execjs-and-could-not-find-a-javascript-runtime" target="_blank">ExecJS and could not find a JavaScript runtime</a>
 
