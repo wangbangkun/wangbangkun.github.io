@@ -3,8 +3,8 @@ layout:     post
 title:      jQuery video note
 date:       2015-02-14 21:34:50
 summary:    视频笔记
-categories: js
-tag:        jquery
+categories: javascript
+tag:        jQuery
 ---
 
 ---

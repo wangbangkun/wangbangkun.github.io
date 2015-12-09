@@ -4,6 +4,7 @@ title:      Debug php scripts with eclipse and xdebug on windows
 date:       2014-11-19 22:37:45
 summary:    How to debug php scripts with eclipse and xdebug on windows.
 categories: php
+tag:        debug
 ---
 
 ---

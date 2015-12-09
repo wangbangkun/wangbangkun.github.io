@@ -3,7 +3,8 @@ layout:     post
 title:      Migrate from Prototype to jQuery
 date:       2014-11-02 11:44:21
 summary:    Change Prototype methods to jQuery methods.
-categories: jQuery
+categories: javascript
+tag:        jQuery
 ---
 
 ---

@@ -4,6 +4,7 @@ title:      javascript console 少为人知的方法
 date:       2015-03-22 22:40:35
 summary:    javascript console feature
 categories: javascript
+tag:        console
 ---
 
 ---
