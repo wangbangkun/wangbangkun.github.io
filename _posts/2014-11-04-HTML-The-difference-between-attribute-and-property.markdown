@@ -3,7 +3,7 @@ layout:     post
 title:      HTML The difference between attribute and property
 date:       2014-11-04 23:00:59
 summary:    属性（attribute）和特性（property）的区别。
-categories: html
+categories: javascript
 ---
 
 ---
