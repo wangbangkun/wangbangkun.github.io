@@ -8,7 +8,7 @@ categories: mysql
 
 ---
 
-<a hef="http://www.imooc.com/learn/194" target="_blank">MySQL优化</a>
+<a href="http://www.imooc.com/learn/194" target="_blank">MySQL优化</a>
 
 ### 优化目的
 1. 避免出现页面访问错误
