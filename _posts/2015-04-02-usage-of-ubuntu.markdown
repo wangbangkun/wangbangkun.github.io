@@ -10,14 +10,14 @@ categories: system
 
 #### 顶部、左侧工具栏不正常显示
 
-<img src="{{ "/images/posts/2015/04/02-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/02-1.png" | prepend: site.imgrepo }}">
 
 两种办法
 
 
 * 关闭虚拟机。管理 > 虚拟机设置 > 显示器 > 3D图形，取消选中。
 
-> <img src="{{ "/images/posts/2015/04/02-2.png" | prepend: site.baseurl }}">
+> <img src="{{ "/2015/04/02-2.png" | prepend: site.imgrepo }}">
 
 * 如果条件允许，启用/使用独立显卡。
 
