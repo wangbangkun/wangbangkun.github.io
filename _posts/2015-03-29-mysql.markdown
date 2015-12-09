@@ -44,28 +44,28 @@ shell> mysql --host=remote.example.com --port=13306
 ### 检查版本号[^version]
 1.使用mysql命令客户端建立连接之后，MySQL服务器版本将会显示。
 
-<img src="{{ "/images/posts/2015/03/29-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/29-1.png" | prepend: site.imgrepo }}">
 
 2.
 {% highlight bash %}
 mysql> show variables like "%version%";
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/03/29-2.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/29-2.png" | prepend: site.imgrepo }}">
 
 3.使用**select version();**。这种情况下只显示**version**值。
 {% highlight bash %}
 mysql> select version();
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/03/29-3.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/29-3.png" | prepend: site.imgrepo }}">
 
 4.使用**status;**
 {% highlight bash %}
 mysql> status;
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/03/29-4.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/29-4.png" | prepend: site.imgrepo }}">
 
 [^connect]: <a href="https://dev.mysql.com/doc/refman/5.0/en/connecting.html" target="_blank">mysql 5.0 manual connecting</a>
 [^version]: <a href="https://dev.mysql.com/doc/refman/5.0/en/installation-version.html" target="_blank">installation version</a>

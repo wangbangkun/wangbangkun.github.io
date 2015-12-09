@@ -23,7 +23,7 @@ main()
 {% endhighlight %}
 gcc编译，运行后发现，输入字符串按下回车后，输出整个字符串。
 
-<img src="{{ "/images/posts/2015/04/05-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/05-1.png" | prepend: site.imgrepo }}">
 
 书中定义：
 
@@ -38,5 +38,7 @@ stackoverflow上有人问这个问题[^getchar]。得票最高的答案：
 
 另外一个重复问题[^getcharputchar]。提问者想要使用fflush(stdin)清空缓冲区。但是根据ANSI C标准，fflush(stdin)会引发未定义行为。
 
-[^getchar]:<a href="http://stackoverflow.com/questions/3676796/what-does-getchar-exactly-do" target="_blank">What does getchar() exactly do?</a>
-[^getcharputchar]:<a href="http://stackoverflow.com/questions/19468343/i-have-two-questions-related-to-getchar-and-putchar" target="_blank">I have two questions related to getchar() and putchar() [duplicate]</a>
+
+[^getchar]: <a href="http://stackoverflow.com/questions/3676796/what-does-getchar-exactly-do" target="_blank">What does getchar() exactly do?</a>
+
+[^getcharputchar]: <a href="http://stackoverflow.com/questions/19468343/i-have-two-questions-related-to-getchar-and-putchar" target="_blank">I have two questions related to getchar() and putchar() [duplicate]</a>

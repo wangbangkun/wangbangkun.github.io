@@ -3,7 +3,7 @@ layout:     post
 title:      usage of ubuntu
 date:       2015-04-02 20:13:40
 summary:    ubuntu usage
-categories: mysql
+categories: system
 ---
 
 ---

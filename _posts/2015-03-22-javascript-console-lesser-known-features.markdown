@@ -73,7 +73,7 @@ console.groupEnd(); // For the "Embeded subgroup"
 console.groupEnd(); // For the "Second group"
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/03/22-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/22-1.png" | prepend: site.imgrepo }}">
 
 {% highlight javascript %}
 console.groupCollapsed('Pre-collapsed to save your eyes');
@@ -83,7 +83,7 @@ console.info('This is a potato');
 console.groupEnd();
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/03/22-2.gif" | prepend: site.baseurl }}">
+<img src="{{ "/2015/03/22-2.gif" | prepend: site.imgrepo }}">
 
 ### 测定和分析
 
@@ -124,11 +124,11 @@ console.profileEnd();
 
 *IE浏览器*
 
-<img src="{{ "/images/posts/2015/04/08-1.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/08-1.png" | prepend: site.imgrepo }}">
 
 *chrome浏览器*
 
-<img src="{{ "/images/posts/2015/04/08-2.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/08-2.png" | prepend: site.imgrepo }}">
 
 你也可以使用console.count()用来计算某标记处被调用次数：
 
@@ -194,7 +194,7 @@ console.table()可以让你在控制台使用图形表格调试表格式数据�
 console.table([['a', 'b', 'c'], ['easy as'], [1,2,3]]);
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/04/08-3.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/08-3.png" | prepend: site.imgrepo }}">
 
 有些浏览器会“决定”是否使用表格显示你的数据。例如，console.table([1,2,3]);可能不会在表格中显示。
 
@@ -216,7 +216,7 @@ var venal_crushes = [
 console.table(venal_crushes, ['name', 'salary']);
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/04/08-4.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/08-4.png" | prepend: site.imgrepo }}">
 
 ###记录堆栈轨迹
 
@@ -242,7 +242,7 @@ var d = function() {
 (function() { d(); })();
 {% endhighlight %}
 
-<img src="{{ "/images/posts/2015/04/08-5.png" | prepend: site.baseurl }}">
+<img src="{{ "/2015/04/08-5.png" | prepend: site.imgrepo }}">
 
 原文地址：
 <a href="https://medium.com/@c2c/javascript-console-lesser-known-features-9fe3852ce48b" target="_blank">javascript: console lesser known features.</a>
