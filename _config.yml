@@ -25,9 +25,9 @@ paginate: 10
 paginate_path: ":num"
 baseurl: ""
 
-title: "hello world"
+title: ""
 email: "wangbangkun@yeah.net"
-description: "$().ready();"
+description: ""
 github_username:  "wangbangkun"
 
 
