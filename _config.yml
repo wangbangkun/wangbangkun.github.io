@@ -1,7 +1,7 @@
 permalink: /:year-:month-:day/:title/
 
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: [
    "no_intra_emphasis"
@@ -17,9 +17,10 @@ redcarpet:
    ,"quote"
    ,"lax_spacing"
    ,"prettify"
-#   ,"html_toc"
+   ,"html_toc"
   ]
-
+plugins:
+  - jekyll-paginate
 paginate: 10
 paginate_path: ":num"
 baseurl: ""
