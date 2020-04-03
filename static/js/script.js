@@ -7,6 +7,12 @@
  */
 $(document).ready(function() {
     backToTop();
+    /**
+     * 侧边目录
+     */
+    $('.toc').length && $('.toc').each(function(i,o){
+        $(o).toc({ listType: 'ul', headers: 'h1, h2, h3' });
+    });
 });
 
 /**
@@ -30,9 +36,7 @@ function backToTop() {
 
     //点击回到顶部
     st.click(function() {
-        $("body").animate({
-            scrollTop: "0"
-        }, 500);
+        $(window).scrollTop(0);
     });
 
 
