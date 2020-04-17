@@ -13,6 +13,24 @@ $(document).ready(function() {
     $('.toc').length && $('.toc').each(function(i,o){
         $(o).toc({ listType: 'ul', headers: 'h1, h2, h3' });
     });
+
+    if ($('.module').length) {
+        let maxW = $('.module').eq(0).width();
+        $('img').each(function(i, e){
+            if (e.width > maxW) {
+                $(this).css({width: maxW - 8});
+            }
+        });
+    }
+
+    if ($('div.content').length) {
+        let maxW = $('div.content').width();
+        $('img').each(function(i, e){
+            if (e.width > maxW) {
+                $(this).css({width: maxW - 62});
+            }
+        });
+    }
 });
 
 /**
